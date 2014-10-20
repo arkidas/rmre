@@ -1,5 +1,6 @@
 class <%= table_name.tableize.classify %> < ActiveRecord::Base
   <%= "self.table_name = '#{table_name}'" -%>
+  <%= "lalala" %>
 
   <% unless "id" == primary_key || primary_key.nil? %>
     <%= "self.primary_key = :#{primary_key}" -%>
